@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.5
 
 RUN apk update && apk add \
         php5 \
@@ -22,6 +22,8 @@ RUN apk update && apk add \
         php5-posix \
         php5-soap \
         php5-xml \
+	php5-apache2 \
+	php5-cli \
         bash \
     && rm -rf /var/cache/apk/*
 
