@@ -22,9 +22,9 @@ RUN apk update && apk add \
         php5-posix \
         php5-soap \
         php5-xml \
+        bash \
     && rm -rf /var/cache/apk/*
 
 
 EXPOSE 9000
 
-CMD ["php-fpm", "-F"]
